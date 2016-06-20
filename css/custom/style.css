@@ -460,33 +460,21 @@ body{
 	opacity: 1;
 }
 .cs-section3-img2 img {
-	animation-duration: .5s;
-	animation-delay: 0s;
 	opacity: 1;
 }
 .cs-section3-img3 img {
-	animation-duration: .5s;
-	animation-delay: 0s;
 	opacity: 1;
 }
 .cs-section3-img4 img {
-	animation-duration: .5s;
-	animation-delay: 0s;
 	opacity: 1;
 }
 .cs-section3-img5 img {
-	animation-duration: .5s;
-	animation-delay: 0s;
 	opacity: 1;
 }
 .cs-section3-img6 img {
-	animation-duration: .5s;
-	animation-delay: 0s;
 	opacity: 1;
 }
 .cs-section3-img7 img {
-	animation-duration: .5s;
-	animation-delay: 0s;
 	opacity: 1;
 }
 
@@ -538,39 +526,39 @@ body{
 	transform: translate3D(95%, 0, 0);
 }
 .cs-section3-text-p-box {
-	transition: transform 0.5s ease-out;
+	transition: transform 1.5s ease-out;
 }
 
 #id_section3_text2 .cs-section3-text-p-box {
-	animation-delay: 1s;
-}
-#id_section3_text3 .cs-section3-text-p-box {
 	animation-delay: 2s;
 }
-#id_section3_text4 .cs-section3-text-p-box {
-	animation-delay: 3s;
-}
-#id_section3_text5 .cs-section3-text-p-box {
+#id_section3_text3 .cs-section3-text-p-box {
 	animation-delay: 4s;
 }
+#id_section3_text4 .cs-section3-text-p-box {
+	animation-delay: 6s;
+}
+#id_section3_text5 .cs-section3-text-p-box {
+	animation-delay: 8s;
+}
 #id_section3_text6 .cs-section3-text-p-box {
-	animation-delay: 5s;
+	animation-delay: 10s;
 }
 
 #id_section3_text2 .cs-section3-text-span1 {
-	animation-delay: 1s;
-}
-#id_section3_text3 .cs-section3-text-span1 {
 	animation-delay: 2s;
 }
-#id_section3_text4 .cs-section3-text-span1 {
-	animation-delay: 3s;
-}
-#id_section3_text5 .cs-section3-text-span1 {
+#id_section3_text3 .cs-section3-text-span1 {
 	animation-delay: 4s;
 }
+#id_section3_text4 .cs-section3-text-span1 {
+	animation-delay: 6s;
+}
+#id_section3_text5 .cs-section3-text-span1 {
+	animation-delay: 8s;
+}
 #id_section3_text6 .cs-section3-text-span1 {
-	animation-delay: 5s;
+	animation-delay: 10s;
 }
 
 @keyframes cs-zoomInUp {
@@ -600,6 +588,21 @@ body{
   animation-name: cs-zoomInUp;
 }
 
+/*
+ 8.33   1s
+16.66   2s
+24.99   3s
+33.33   4s
+41.66   5s
+49.99   6s
+58.33   7s
+66.66   8s
+74.99   9s
+83.33   10s
+91.66   11s
+99.99   12s
+ */
+
 @keyframes cs-slideImg-1 {
   from, to {
 	transform: translate3D(100%, 0, 0);
@@ -623,7 +626,7 @@ body{
 .cs-slideImg-1 {
   animation-name: cs-slideImg-1;
 
-  animation-duration: 6s;
+  animation-duration: 12s;
   animation-fill-mode: both;
  
   animation-iteration-count: infinite;
@@ -652,7 +655,7 @@ body{
 .cs-slideImg-2 {
   animation-name: cs-slideImg-2;
 
-  animation-duration: 6s;
+  animation-duration: 12s;
   animation-fill-mode: both;
  
   animation-iteration-count: infinite;
@@ -681,7 +684,7 @@ body{
 .cs-slideImg-3 {
   animation-name: cs-slideImg-3;
 
-  animation-duration: 6s;
+  animation-duration: 12s;
   animation-fill-mode: both;
  
   animation-iteration-count: infinite;
@@ -710,7 +713,7 @@ body{
 .cs-slideImg-4 {
   animation-name: cs-slideImg-4;
 
-  animation-duration: 6s;
+  animation-duration: 12s;
   animation-fill-mode: both;
  
   animation-iteration-count: infinite;
@@ -739,7 +742,7 @@ body{
 .cs-slideImg-5 {
   animation-name: cs-slideImg-5;
 
-  animation-duration: 6s;
+  animation-duration: 12s;
   animation-fill-mode: both;
  
   animation-iteration-count: infinite;
@@ -771,7 +774,7 @@ body{
 .cs-slideImg-6 {
   animation-name: cs-slideImg-6;
 
-  animation-duration: 6s;
+  animation-duration: 12s;
   animation-fill-mode: both;
  
   animation-iteration-count: infinite;
@@ -782,10 +785,10 @@ body{
   from {
   	transform: scale(1);
   }
-  17% {
+  8% {
   	transform: scale(1.25);
   }
-  30% {
+  15% {
   	transform: scale(1);
   }
 
@@ -797,7 +800,7 @@ body{
 .cs-zoomTitle {
   animation-name: cs-zoomTitle;
 
-  animation-duration: 6s;
+  animation-duration: 12s;
   animation-fill-mode: both;
  
   animation-iteration-count: infinite;
@@ -807,16 +810,16 @@ body{
   from {
   	color: #75808f;;
   }
-  5% {
+  2.5% {
+	color: #2e95d4;;
+  }
+  8% {
+	color: #2e95d4;;
+  }
+  12% {
 	color: #2e95d4;;
   }
   15% {
-	color: #2e95d4;;
-  }
-  25% {
-	color: #2e95d4;;
-  }
-  30% {
   	color: #75808f;;
   }
 
@@ -828,7 +831,7 @@ body{
 .cs-spanColor {
   animation-name: cs-spanColor;
 
-  animation-duration: 6s;
+  animation-duration: 12s;
   animation-fill-mode: both;
  
   animation-iteration-count: infinite;

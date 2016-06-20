@@ -127,6 +127,10 @@ function slideAfterLoad(anchorLink, index, slideAnchor, slideIndex){
 
     //first slide of the first section
     if(index == 1 && slideIndex == 0){
+        clearInterval(slideInterval);
+        slideInterval = setInterval(function(){
+              $.fn.fullpage.moveSlideRight();
+            }, 7000);
         $('.cs-section1-slide2-img1 img').removeClass('animated bounceIn');
         $('.cs-section1-slide2-img2 img').removeClass('animated fadeIn');
         $('.cs-section1-slide2-img3 img').removeClass('animated cs-zoomOutRightDown');
@@ -152,6 +156,10 @@ function slideAfterLoad(anchorLink, index, slideAnchor, slideIndex){
         $('.cs-section1-slide1-img4 img').addClass('animated fadeInLeft');
         $('.cs-section1-slide1-img5 img').addClass('animated fadeInLeft');
     }else if(index == 1 && slideIndex == 1){
+        clearInterval(slideInterval);
+        slideInterval = setInterval(function(){
+              $.fn.fullpage.moveSlideRight();
+            }, 7000);
         $('.cs-section1-slide1-img1 img').removeClass('animated fadeInDown');
         $('.cs-section1-slide1-img2 img').removeClass('animated fadeIn');
         $('.cs-section1-slide1-img3 img').removeClass('animated fadeInRight');
@@ -178,6 +186,10 @@ function slideAfterLoad(anchorLink, index, slideAnchor, slideIndex){
         $('.cs-section1-slide2-img6 img').addClass('animated cs-zoomOutLeftUp');
 
     }else if(index == 1 && slideIndex == 2){
+        clearInterval(slideInterval);
+        slideInterval = setInterval(function(){
+              $.fn.fullpage.moveSlideRight();
+            }, 7000);
         $('.cs-section1-slide1-img1 img').removeClass('animated fadeInDown');
         $('.cs-section1-slide1-img2 img').removeClass('animated fadeIn');
         $('.cs-section1-slide1-img3 img').removeClass('animated fadeInRight');
