@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>products front case</title>
+
+	<link rel="stylesheet" type="text/css" href="css/third/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/third/animate.css" />
+	<link rel="stylesheet" href="css/custom/style.css">
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script src="js/custom/index.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			$(document).scroll(function () {
+				var scrollTop = $(document).scrollTop();
+				if( scrollTop < 85){
+					$('.header').removeClass('header-active');
+				}else {
+					$('.header').addClass('header-active');
+				}
+			});
+
+			setInterval(function(){
+			  $.fn.fullpage.moveSlideRight();
+			}, 7000);
+
+			$('#fullpage').fullpage({
+		        autoScrolling: false,
+		        scrollBar:true,
+		        verticalCentered: false,
+		        slidesNavigation: true,
+
+		        sectionsColor: ['#effbf7', '#fff', '#f4f4f4', '#fff', '#effbf7'],
+		        fixedElements: '.footer',
+		        normalScrollElements: '.cs-header',
+		        fitToSectionDelay: 3600000,
+
+		        afterLoad: sectionAfterLoad,
+				onLeave: sectionOnLeave,
+		        afterSlideLoad: slideAfterLoad,
+		        onSlideLeave: slideOnLeave
+		    });
+		});
+	</script>
+</head>
+<body>
+	<!-- header begin -->
+	<div class="header">
+		<img class="logo" src="imgs/logo.png" >
+		<a href="http://10.254.11.102:8080/AGis/">进入系统</a>
+		<a href="http://10.254.11.102:8080/AGis/">登录</a>
+		<a href="#">注册</a>
+	</div>
+	<!-- header end -->
+
+	<div id="fullpage">
+
+		<!-- section1 begin -->
+		<div class="section" id="section1">
+			<!-- cs-header begin -->
+			<div class="cs-header">
+				<div>
+					<img class="logo" src="imgs/logo.png" >
+					<a href="http://10.254.11.102:8080/AGis/">进入系统</a>
+					<a href="http://10.254.11.102:8080/AGis/">登录</a>
+					<a href="#">注册</a>
+				</div>
+			</div>
+			<!-- cs-header end -->
+			<div class="slide" id="slide1">
+				<div class="cs-box-absolute">
+
+					<div class="cs-section1-slide1-img1">
+						<img src="imgs/title1.png" class="">
+					</div>
+					<div class="cs-section1-slide1-img2">
+						<img src="imgs/img1_3.png" class="">
+					</div>
+					<div class="cs-section1-slide1-img3">
+						<img src="imgs/img1_4.png" class="">
+					</div>
+					<div class="cs-section1-slide1-img4">
+						<img src="imgs/img1_2.png" class="">
+					</div>
+					<div class="cs-section1-slide1-img5">
+						<img src="imgs/img1_1.png" class="">
+					</div>
+
+				</div>
+			</div>
+		    <div class="slide" id="slide2">
+		    	<div class="cs-box-absolute">
+
+					<div class="cs-section1-slide2-img1">
+						<img src="imgs/title2.png" class="">
+					</div>
+					<div class="cs-section1-slide2-img2">
+						<img src="imgs/img2_1.png" class="">
+					</div>
+					<div class="cs-section1-slide2-img3">
+						<img src="imgs/img2_3.png" class="">
+					</div>
+					<div class="cs-section1-slide2-img4">
+						<img src="imgs/img2_4.png" class="">
+					</div>
+					<div class="cs-section1-slide2-img5">
+						<img src="imgs/img2_2.png" class="">
+					</div>
+					<div class="cs-section1-slide2-img6">
+						<img src="imgs/img2_5.png" class="">
+					</div>
+
+				</div>
+		    </div>
+		    <div class="slide" id="slide3">
+		    	<div class="cs-box-absolute">
+		    		<div class="cs-section1-slide3-img1"><img src="imgs/title3.png" alt=""></div>
+		    		<div class="cs-section1-slide3-img2"><img src="imgs/title3_1.png" alt=""></div>
+		    		<div class="cs-section1-slide3-img10"><img src="imgs/img3_1.png" alt=""></div>
+		    		<div class="cs-section1-slide3-img11"><img src="imgs/img3_2.png" alt=""></div>
+		    		<div class="cs-section1-slide3-img3"><img src="imgs/img3_3.png" alt=""></div>
+		    		<div class="cs-section1-slide3-img4"><img src="imgs/img3_4.png" alt=""></div>
+		    		<div class="cs-section1-slide3-img5"><img src="imgs/img3_5.png" alt=""></div>
+		    		<div class="cs-section1-slide3-img6"><img src="imgs/img3_6.png" alt=""></div>
+		    		<div class="cs-section1-slide3-img7"><img src="imgs/img3_7.png" alt=""></div>
+		    		<div class="cs-section1-slide3-img8"><img src="imgs/img3_8.png" alt=""></div>
+		    		<div class="cs-section1-slide3-img9"><img src="imgs/img3.png" alt=""></div>
+		    	</div>
+		    </div>
+		</div>
+		<!-- section1 end -->
+
+		<!-- section2 begin -->
+		<div class="section" id="section2">
+			<div class="cs-box-absolute">
+				<div class="cs-section2-img9"><img src="imgs/title4.png" alt=""></div>
+				<div class="cs-section2-img10"><img src="imgs/title4_1.png" alt=""></div>
+
+				<div class="cs-section2-img1">
+					<div class="cs-section2-img1-content">
+						<img src="imgs/img4_1.png" alt="">
+						<p>
+							<span>通过选择起始点和终止点，起点和终点之间寻找最佳的移动线路，实现快速最优路径分析</span>
+						</p>
+					</div>
+				</div>
+				<div class="cs-section2-img2">
+					<div class="cs-section2-img1-content">
+						<img src="imgs/img4_2.png" alt="">
+						<p><span>收集平台的错误和用户建议，使得平台管理员可以对用户提交的信息进行处理，实现用户信息反馈功能</span></p>
+					</div>
+				</div>
+				<div class="cs-section2-img3">
+					<div class="cs-section2-img1-content">
+						<img src="imgs/img4_3.png" alt="">
+						<p><span>动态展示生态城环境质量，提供空气质量分级功能，空气质量统计功能，空气质量分析功能，实现空气质量展示功能</span></p>
+					</div>
+				</div>
+				<div class="cs-section2-img4">
+					<div class="cs-section2-img1-content">
+						<img src="imgs/img4_4.png" alt="">
+						<p><span>通过点选需要分析的要素和缓冲分析半径，在地图上展现该要素周围相应缓冲区，实现空间缓冲分析功能</span></p>
+					</div>
+				</div>
+				<div class="cs-section2-img5">
+					<div class="cs-section2-img1-content">
+						<img src="imgs/img4_5.png" alt="">
+						<p><span>提供地名地址匹配功能</span></p>
+					</div>
+				</div>
+				<div class="cs-section2-img6">
+					<div class="cs-section2-img1-content">
+						<img src="imgs/img4_6.png" alt="">
+						<p><span>跟踪记录鼠标移动位置，实时显示当前坐标信息，并可以保存点击位置的坐标信息，实现地图坐标查询功能</span></p>
+					</div>
+				</div>
+				<div class="cs-section2-img7">
+					<div class="cs-section2-img1-content">
+						<img src="imgs/img4_7.png" alt="">
+						<p>
+							<span>实现地图的快速调用和定位，为其它系统提供地图服务</span>
+						</p>
+					</div>
+				</div>
+				<div class="cs-section2-img8">
+					<div class="cs-section2-img1-content">
+						<img src="imgs/img4_8.png" alt="">
+						<p><span>实现快速截图，截图界面调整，保存为本地图片等功能，实现系统界面截图功能</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- section2 end -->
+
+		<!-- section3 begin -->
+		<div class="section" id="section3">
+			<div class="cs-box-absolute">
+				<div class="cs-section3-img8"><img src="imgs/title5.png" alt=""></div>
+				<div class="cs-section3-img9"><img src="imgs/title5_1.png" alt=""></div>
+				<div class="cs-section3-img1"><img src="imgs/img5_1.png" alt=""></div>
+				<div class="cs-section3-img-box">
+					<div class="cs-section3-img2"><img src="imgs/img5_2.png" alt=""></div>
+					<div class="cs-section3-img3"><img src="imgs/img5_4.png" alt=""></div>
+					<div class="cs-section3-img4"><img src="imgs/img5_6.png" alt=""></div>
+					<div class="cs-section3-img5"><img src="imgs/img5_3.png" alt=""></div>
+					<div class="cs-section3-img6"><img src="imgs/img5_5.png" alt=""></div>
+					<div class="cs-section3-img7"><img src="imgs/img5_7.png" alt=""></div>
+				</div>
+				<div class="cs-section3-text" id="id_section3_text1">
+					<div class="cs-section3-text-p-box">
+						<p class="cs-section3-text-p1" >
+							<span class="cs-section3-text-span1" >01</span>
+							<span class="cs-section3-text-span2" >2.5维地图</span>
+						</p>
+						<p class="cs-section3-text-p2" >全方位立体展示<br>实景模拟直观立体</p>
+					</div>
+						
+				</div>
+				<div class="cs-section3-text" id="id_section3_text2">
+					<div class="cs-section3-text-p-box">
+						<p class="cs-section3-text-p1" >
+							<span class="cs-section3-text-span1" >02</span>
+							<span class="cs-section3-text-span2" >图层编辑</span>
+						</p>
+						<p class="cs-section3-text-p2" >定制化数据接口<br>个性化图层配置</p>
+					</div>
+				</div>
+				<div class="cs-section3-text" id="id_section3_text3">
+					<div class="cs-section3-text-p-box">
+						<p class="cs-section3-text-p1" >
+							<span class="cs-section3-text-span1" >03</span>
+							<span class="cs-section3-text-span2" >视频监控</span>
+						</p>
+						<p class="cs-section3-text-p2" >视频网络全城覆盖<br>实时视频监控</p>
+					</div>
+				</div>
+				<div class="cs-section3-text" id="id_section3_text4">
+					<div class="cs-section3-text-p-box">
+						<p class="cs-section3-text-p1" >
+							<span class="cs-section3-text-span1" >04</span>
+							<span class="cs-section3-text-span2" >室内外导航</span>
+						</p>
+						<p class="cs-section3-text-p2" >室内外无缝转换<br>精准导航分析功能</p>
+					</div>
+				</div>
+				<div class="cs-section3-text" id="id_section3_text5">
+					<div class="cs-section3-text-p-box">
+						<p class="cs-section3-text-p1" >
+							<span class="cs-section3-text-span1" >05</span>
+							<span class="cs-section3-text-span2" >影像对比</span>
+						</p>
+						<p class="cs-section3-text-p2" >历年影像同屏对比<br>总览城市建设进程</p>
+					</div>
+				</div>
+				<div class="cs-section3-text" id="id_section3_text6">
+					<div class="cs-section3-text-p-box">
+						<p class="cs-section3-text-p1" >
+							<span class="cs-section3-text-span1" >06</span>
+							<span class="cs-section3-text-span2" >应急服务</span>
+						</p>
+						<p class="cs-section3-text-p2" >面向应急指挥<br>提供应急资源信息管理</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<!-- section3 end -->
+
+		<!-- section4 begin -->
+		<div class="section" id="section4">
+			<div class="cs-box-absolute">
+				<div class="cs-section4-img5"><img src="imgs/title6.png" alt=""></div>
+				<div class="cs-section4-img6"><img src="imgs/title6_1.png" alt=""></div>
+
+				<div class="cs-section4-img1"><img src="imgs/img6_1.png" alt=""></div>
+				<div class="cs-section4-img2"><img src="imgs/img6_2.png" alt=""></div>
+				<div class="cs-section4-img3"><img src="imgs/img6_3.png" alt=""></div>
+				<div class="cs-section4-img4"><img src="imgs/img6_4.png" alt=""></div>
+
+				<div class="cs-section4-p1">
+					<p>水环境监测数据、空气质量监测数据、噪声监测数据——探索空气质量指数波动、水环境监测对比</p>
+				</div>
+				<div class="cs-section4-p2">
+					<p>传统能源（水、气、热）数据、建筑可再生能源数据,日人均耗能量、可再生能源使用率、能源脉动与空间格局</p>
+				</div>
+				<div class="cs-section4-p3">
+					<p>城市公交车、地铁、出租车、执法大队车辆轨迹、客流量分析</p>
+				</div>
+				<div class="cs-section4-p4">
+					<p>多期空间数据、多类规划设计等——探索多时相土地利用比对、城市建设变迁</p>
+				</div>
+			</div>
+		</div>
+		<!-- section4 end -->
+
+		<!-- section5 begin -->
+		<div class="section" id="section5">
+			<div class="cs-box-absolute">
+				<div class="cs-section5-img3"><img src="imgs/title7.png" alt=""></div>
+				<div class="cs-section5-img4"><img src="imgs/title7_1.png" alt=""></div>
+
+				<div class="cs-section5-img1"><img src="imgs/img7_1.png" alt=""></div>
+				<div class="cs-section5-img2"><img src="imgs/img7_2.png" alt=""></div>
+
+				<div class="cs-section5-p1">
+					<p>
+						直接嵌套：网站、系统、大屏展示......
+					</p>
+				</div>
+				<div class="cs-section5-p2">
+					<p>
+						移动端调用：APP、公众号、软件......
+					</p>
+				</div>
+				<div class="cs-section5-p3">
+					<p>
+						SDK移植：APP、平台、软件......
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- section5 end -->
+
+		<!-- footer begin -->
+		<div class="footer" >
+			<div class="Yhl">
+				<div class="Y_left">
+					<h3>友情链接</h3>
+					<p><a href="http://192.168.0.104:8080/dataGtheringAndSharing/login.html">中新天津生态城数据汇聚共享管理系统</a></p>
+					<p><a href="http://www.eco-city.gov.cn/">中新天津生态城门户网站</a></p>
+					<p><a href="http://60.29.64.140:10443/project2016/login.htm?39557.35623123204">建设计划管理系统</a></p>
+					<p><a href="10.254.12.7:8080/cz">政府投资项目资金管理系统</a></p>
+					<p><a href="172.31.11.59/mdcs/wjj.html">脉动城市</a></p>
+				</div>
+				<div class="Y_mid">
+					<h3>联系我们</h3>
+					<p>电话：022-66196056</p>
+					<p>邮编：300467</p>
+					<p>邮箱：tjzxht2012@163.com</p>
+					<p>地址：天津滨海新区中新天津生态城动漫东路355号创研大厦C座328</p>
+				</div>
+				<div class="Y_right">
+					<h3>关注我们</h3>
+					<!-- <p><img src="qrcode.png"  width="130px" height="130px"/></p> -->
+				</div>
+			</div>
+			<div class="Y_bottom">版权所有：天津智信慧通信息技术有限公司</div>
+		</div>
+		<!-- footer end -->
+	</div>
+
+</body>
+</html>
